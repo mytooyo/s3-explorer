@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.file_table tr:hover td {
+  background-color: #e1e4eb5b;
+}
+
+button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  cursor: col-resize;
+  user-select: none;
+}
+
+.resizer:hover,
+.resizing {
+  border-right: 2px solid orange;
+}
